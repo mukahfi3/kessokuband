@@ -350,3 +350,13 @@ body {
     font-weight: 700;
     color: #000;
 }
+
+/* ===== HIGHLIGHT MEMBER SHAPES HOVER ===== */
+.highlight-images .shape {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight-images .shape:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
