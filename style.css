@@ -154,6 +154,12 @@ body {
     object-fit: cover;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(255, 255, 255, 0.3);
 }
 
 /* ===== HIGHLIGHT MEMBER ===== */
@@ -198,12 +204,18 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .shape.pink   { background-color: #ff4fa3; }
 .shape.yellow { background-color: #ffd500; }
 .shape.blue   { background-color: #3fa9f5; }
 .shape.red    { background-color: #ff3b3b; }
+
+.shape:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
 
 /* ===== BUTTONS ===== */
 .btn {
@@ -254,7 +266,6 @@ body {
     padding: 10px 18px;
     border-radius: 8px;
     font-weight: 700;
-    transition: 0.3s;
 }
 
 .featured-text .btn:hover {
@@ -305,7 +316,6 @@ body {
 .album-thumbnails .card-title {
     font-size: 16px;
     font-weight: 700;
-    color: #fff82e;
     margin-bottom: 5px;
 }
 
@@ -314,6 +324,7 @@ body {
     color: #ccc;
 }
 
+/* Border dan warna judul sesuai karakter */
 .album-thumbnails .bocchi { border-top-color: #e87db0; }
 .album-thumbnails .kita   { border-top-color: #ff1a53; }
 .album-thumbnails .ryo    { border-top-color: #4dabf7; }
@@ -349,14 +360,4 @@ body {
     line-height: 1.4;
     font-weight: 700;
     color: #000;
-}
-
-/* ===== HIGHLIGHT MEMBER SHAPES HOVER ===== */
-.highlight-images .shape {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.highlight-images .shape:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
