@@ -27,6 +27,12 @@ body {
     gap: 15px;
 }
 
+.nav-menu a.active {
+    color: #ffd500;
+    border-bottom: 2px solid #ffd500;
+    padding-bottom: 4px;
+}
+
 .brand {
     color: #fff;
     font-size: 25px;
@@ -323,6 +329,16 @@ body {
     font-size: 14px;
     color: #ccc;
 }
+
+/* ===== ALBUM NEUTRAL ===== */
+.album-thumbnails .neutral {
+    border-top-color: #9ca3af;
+}
+
+.album-thumbnails .neutral .card-title {
+    color: #d1d5db; 
+}
+
 
 /* Border dan warna judul sesuai karakter */
 .album-thumbnails .bocchi { border-top-color: #e87db0; }
