@@ -361,3 +361,85 @@ body {
     font-weight: 700;
     color: #000;
 }
+
+/* ===== CONTACT US ===== */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center vertikal */
+    align-items: center;     /* center horizontal */
+    text-align: center;      /* semua teks di tengah */
+    padding: 120px 20px;
+    min-height: 100vh;       /* full screen height */
+    background-image: url("gambar/beranda/background tenteng kessoku band (1).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/* TEKS KONTAK */
+.contact-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff82e;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    max-width: 600px;  /* batas lebar teks */
+    margin: 0 auto 10px; /* center + spasi bawah */
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+}
+
+/* FORM KONTAK */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(234, 234, 234); /* biar agak transparan */
+    color: #1a1a1a;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #1a1a1a;
+}
+
+.contact-form button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: #ffd500;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #fff82e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
